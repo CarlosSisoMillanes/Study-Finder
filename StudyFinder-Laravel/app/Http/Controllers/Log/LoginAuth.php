@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Log;
 
 use App\Http\Controllers\Controller;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
 class LoginAuth extends Controller
@@ -27,5 +28,15 @@ class LoginAuth extends Controller
             return response()->json(['error'=>'usuario/contraseña incorrecto'],404);
         }
 
+    }
+    public function logout(Request $request)
+    {
+        Auth::logout();
+
+        $request->session()->invalidate();
+
+        $request->session()->regenerateToken();
+
+        return redirect('/');
     }
 }

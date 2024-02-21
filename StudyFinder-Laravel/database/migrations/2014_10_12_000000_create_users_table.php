@@ -16,13 +16,18 @@ return new class extends Migration
             $table->string('nombre',40);
             $table->string('apellidos',30);
             $table->string('direccion',100);
-            $table->string('estado',1);
+            $table->string('telefono',15);
+            $table->string('facebook',30);
+            $table->string('instagram',30);
+            $table->string('rol',1);
             $table->string('email')->unique();
             $table->string('password');
+            $table->string('estado',1);
             $table->rememberToken();
             $table->timestamps();
         });
     }
+
 
     /**
      * Reverse the migrations.

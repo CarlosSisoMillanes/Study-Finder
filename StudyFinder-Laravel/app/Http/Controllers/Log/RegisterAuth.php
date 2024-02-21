@@ -10,6 +10,6 @@ class RegisterAuth extends Controller
     public function register(Request $request){
 
 
-        
+
     }
 }

@@ -26,6 +26,7 @@ class User extends Authenticatable
         'facebook',
         'instagram',
         'password',
+        'rol',
     ];
 
     /**
@@ -45,4 +46,15 @@ class User extends Authenticatable
     protected $casts = [
         'password' => 'hashed',
     ];
+
+    protected static function boot()
+    {
+        parent::boot();
+
+        // Escuchar el evento creating
+        static::creating(function ($user) {
+            // Cifrar la contraseña antes de crear el usuario
+            $user->password = Hash::make($user->password);
+        });
+    }
 }

@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Log\LoginAuth;
+use App\Http\Controllers\Log\RegisterAuth;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -20,5 +21,7 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 Route::post('login', [LoginAuth::class,'login']);
+
+Route::post('register',[RegisterAuth::class,'register']);
 
 

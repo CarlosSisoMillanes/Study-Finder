@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Log\LoginAuth;
+use App\Http\Controllers\Log\RegisterAuth;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -18,5 +19,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::post('login', [LoginAuth::class,'login']);
+
+Route::post('register',[RegisterAuth::class,'register']);
+
 
 

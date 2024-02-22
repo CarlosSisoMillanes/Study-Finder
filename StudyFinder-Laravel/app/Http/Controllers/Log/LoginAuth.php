@@ -23,13 +23,26 @@ class LoginAuth extends Controller
 
             $user = User::where('nombre',$info['nombre'])->first();
 
+
+
             if($user && Hash::check($request->password,$user->password)){
 
                 Auth::login($user);
-                return response()->json($user,200);
+
+                $token =$request->session()->token();
+                $token = csrf_token();
+
+
+
+                $id = $user->id_usuario;
+
+                return response()->json([
+                    'id'=>$id,
+                    'token'=>$token
+                ],200);
 
             }
-            
+
         }catch(ModelNotFoundException $e){
             return response()->json(['error'=>'usuario/contraseña incorrecto'],404);
         }

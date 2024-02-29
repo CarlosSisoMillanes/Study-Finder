@@ -22,7 +22,7 @@ export class RegisterComponent implements OnInit {
   }
 
   onSubmit() {
-      console.log(this.registerForm.value); 
+      console.log(this.registerForm.value);
     this.reg();
   }
 

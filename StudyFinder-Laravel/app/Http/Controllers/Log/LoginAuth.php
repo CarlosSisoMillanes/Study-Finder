@@ -32,6 +32,7 @@ class LoginAuth extends Controller
                 $token =$request->session()->token();
 
 
+
                 $id = $user->id_usuario;
 
                 return response()->json([

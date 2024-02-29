@@ -8,6 +8,7 @@ import { PaginaComponent } from './Paginas/pagina/pagina.component';
 import { FooterComponent } from './Componentes/footer/footer.component';
 import { LoginComponent } from './Paginas/login/login.component';
 import { RegisterComponent } from './Paginas/register/register.component';
+import {ReactiveFormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { RegisterComponent } from './Paginas/register/register.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,6 +1,16 @@
 :host {
   display: contents;
 }
+/* Estilo para los mensajes de error */
+.text-danger {
+  position: absolute; /* Hace que los mensajes de error se sobrepongan */
+  color: red; /* Cambia el color del texto del mensaje de error */
+  font-size: 12px; /* Tamaño de fuente del mensaje de error */
+  margin-top: 5px; /* Ajuste el margen superior para separar los mensajes de error del campo */
+  background: whitesmoke;
+  width: 100%;
+}
+
 .container86-container {
   width: 100%;
   display: flex;

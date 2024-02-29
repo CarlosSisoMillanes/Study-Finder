@@ -3,70 +3,58 @@
     <span class="container86-text"><span>Registro</span></span>
     <button class="container86-button9">
       <span class="container86-text02"></span>
-      <img
-        src="assets/Google136-fxg8g.svg"
-        alt="Google1383"
-        class="container86-google"
-      />
+      <img src="assets/Google136-fxg8g.svg" alt="Google1383" class="container86-google">
     </button>
-    <div class="container86-textbox3">
-      <div class="container86-textfield">
-        <span class="container86-text03">
-          <span>Introduce el apellido</span>
-        </span>
+    <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+      <div class="container86-textbox3">
+        <input placeholder="Introduce el apellido" class="container86-textfield" formControlName="apellidos">
+        <span class="container86-text05"><span>Apellidos</span></span>
+        <div *ngIf="registerForm.get('apellidos').invalid && (registerForm.get('apellidos').dirty || registerForm.get('apellidos').touched)" class="text-danger">
+          <div *ngIf="registerForm.get('apellidos').hasError('required')">Los apellidos son requeridos.</div>
+        </div>
       </div>
-      <span class="container86-text05"><span>Apellidos</span></span>
-    </div>
-    <div class="container86-textbox4">
-      <input placeholder="Introduce el nombre" class="container86-textfield1">
+      <div class="container86-textbox4">
+        <input placeholder="Introduce el nombre" class="container86-textfield1" formControlName="nombre">
         <span class="container86-text07"><span></span></span>
-      <span class="container86-text09"><span>Nombre</span></span>
-    </div>
-    <div class="container86-textbox5">
-      <span class="container86-text11">
-        <span>Dirección de correo electrónico</span>
-      </span>
-      <div class="container86-textfield2">
-        <span class="container86-text13"><span>ejemplol@gmail.com</span></span>
+        <span class="container86-text09"><span>Nombre</span></span>
+        <div *ngIf="registerForm.get('nombre').invalid && (registerForm.get('nombre').dirty || registerForm.get('nombre').touched)" class="text-danger">
+          <div *ngIf="registerForm.get('nombre').hasError('required')">El nombre es requerido.</div>
+        </div>
       </div>
-    </div>
-    <div class="container86-textbox6">
-      <span class="container86-text15"><span>Contraseña</span></span>
-      <div class="container86-textfield3">
-        <span class="container86-text17">
-          <span>Introduce la contraseña</span>
+      <div class="container86-textbox5">
+        <span class="container86-text11">
+          <span>Dirección de correo electrónico</span>
         </span>
-        <img src="/assets/Hide1317-9e8n.svg" alt="Hide1310" class="container86-hide" />
+        <input placeholder="ejemplol@gmail.com" class="container86-textfield2" formControlName="email">
+        <div *ngIf="registerForm.get('email').invalid && (registerForm.get('email').dirty || registerForm.get('email').touched)" class="text-danger">
+          <div *ngIf="registerForm.get('email').hasError('required')">El correo electrónico es requerido.</div>
+          <div *ngIf="registerForm.get('email').hasError('email')">El correo electrónico no es válido.</div>
+        </div>
       </div>
-    </div>
-    <span class="container86-text19">
-      <span>He leído y acepto los términos y condiciones de uso</span>
-    </span>
-    <button class="container86-button12">
-      <span class="container86-text21"><span>Register</span></span>
-    </button>
-    <span class="container86-text23">
-      <span>¿Ya tienes una cuenta? Iniciar sesión</span>
-    </span>
-    <div class="container86-checkbox6">
-      <div class="container86-frame">
-        <img
-          src="/rectangle1311-l65a-200h.png"
-          alt="Rectangle1311"
-          class="container86-rectangle"
-        />
-        <img
-          src="/frame1311-dcv7.svg"
-          alt="Frame1311"
-          class="container86-frame1"
-        />
-        <span class="container86-text25"></span>
+      <div class="container86-textbox6">
+        <span class="container86-text15"><span>Contraseña</span></span>
+        <input class="container86-textfield3" placeholder="Introduce la contraseña" formControlName="password">
+        <div *ngIf="registerForm.get('password').invalid && (registerForm.get('password').dirty || registerForm.get('password').touched)" class="text-danger">
+          <div *ngIf="registerForm.get('password').hasError('required')">La contraseña es requerida.</div>
+          <div *ngIf="registerForm.get('password').hasError('minlength')">La contraseña debe tener al menos 6 caracteres.</div>
+        </div>
       </div>
+      <span class="container86-text19">
+        <span>He leído y acepto los términos y condiciones de uso</span>
+      </span>
+      <button type="submit" class="container86-button12" [disabled]="!registerForm.valid">
+        <span class="container86-text21"><span>Register</span></span>
+      </button>
+      <span class="container86-text23">
+        <span>¿Ya tienes una cuenta?  <a routerLink="/login">  Iniciar sesión</a> </span>
+      </span>
+      <div class="container86-checkbox6">
+        <div class="container86-frame">
+          <input type="checkbox" formControlName="termsAndConditions">
+          <span class="container86-text25"></span>
+        </div>
+      </div>
+    </form>
     </div>
-    <div class="container86-textbox61">
-      <span class="container86-text26"><span>Confirmar contraseña</span></span>
-      <input class="container86-textfield4" placeholder="Introduce la contraseña" />
-    </div>
-  </div>
 </div>
 <app-footer></app-footer>

@@ -1,4 +1,4 @@
-<div class="container86-container">
+<div class="container86-container" [formGroup]="loginForm">
   <div class="container86-container86">
     <span class="container86-text"><span>Log in</span></span>
     <button class="container86-button9">
@@ -10,19 +10,19 @@
       />
     </button>
     <div class="container86-textbox5">
-      <input  placeholder="ejemplol@gmail.com" class="container86-textfield">
+      <input placeholder="ejemplol@gmail.com" class="container86-textfield" formControlName="email">
       <span class="container86-text05">
         <span>Dirección de correo electrónico</span>
       </span>
     </div>
     <div class="container86-textbox6">
-      <input placeholder="Introduce la contraseña" class="container86-textfield1">
-
+      <input placeholder="Introduce la contraseña" class="container86-textfield1" formControlName="password">
       <span class="container86-text09"><span>Contraseña</span></span>
     </div>
-    <button class="container86-button12">
+    <button class="container86-button12"  (click)="onSubmit()">
       <span class="container86-text11"><span>Sign up</span></span>
     </button>
+
     <span class="container86-text13">
       <span>¿Todavía no tienes una cuenta? <a routerLink="/register">Registro</a></span>
     </span>

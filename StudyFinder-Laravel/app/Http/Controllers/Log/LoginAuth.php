@@ -15,13 +15,13 @@ class LoginAuth extends Controller
     {
         try{
             $request->validate([
-                'nombre'=> 'required|string|max:40',
+                'email'=> 'required|string',
                 'password'=> 'required|string',
             ]);
 
-            $info = $request->only('nombre','password');
+            $info = $request->only('email','password');
 
-            $user = User::where('nombre',$info['nombre'])->first();
+            $user = User::where('email',$info['email'])->first();
 
 
 
@@ -30,8 +30,6 @@ class LoginAuth extends Controller
                 Auth::login($user);
 
                 $token =$request->session()->token();
-                $token = csrf_token();
-
 
 
                 $id = $user->id_usuario;

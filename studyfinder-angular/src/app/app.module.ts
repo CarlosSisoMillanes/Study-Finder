@@ -3,18 +3,17 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ComponentComponent } from './componentes/component/component.component';
 import { PaginaComponent } from './Paginas/pagina/pagina.component';
 import { FooterComponent } from './Componentes/footer/footer.component';
 import { LoginComponent } from './Paginas/login/login.component';
 import { RegisterComponent } from './Paginas/register/register.component';
 import {ReactiveFormsModule} from "@angular/forms";
 import { PerfilComponent } from './Paginas/perfil/perfil.component';
+import {HttpClientModule} from "@angular/common/http";
 
 @NgModule({
   declarations: [
     AppComponent,
-    ComponentComponent,
     PaginaComponent,
     FooterComponent,
     LoginComponent,
@@ -24,7 +23,8 @@ import { PerfilComponent } from './Paginas/perfil/perfil.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import {UserService} from "../../services/serviceUser/user.service";
 
 @Component({
   selector: 'app-register',
@@ -9,7 +10,7 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 export class RegisterComponent implements OnInit {
   registerForm: FormGroup;
 
-  constructor(private formBuilder: FormBuilder) { }
+  constructor(private formBuilder: FormBuilder,public userService: UserService) { }
 
   ngOnInit(): void {
     this.registerForm = this.formBuilder.group({
@@ -17,14 +18,26 @@ export class RegisterComponent implements OnInit {
       nombre: ['', Validators.required],
       email: ['', [Validators.required, Validators.email]],
       password: ['', [Validators.required, Validators.minLength(6)]],
-      confirmPassword: ['', Validators.required],
-      termsAndConditions: [false, Validators.requiredTrue]
     });
   }
 
   onSubmit() {
-    if (this.registerForm.valid) {
-      console.log(this.registerForm.value); // Aquí puedes enviar los datos del formulario al servidor
-    }
+      console.log(this.registerForm.value); 
+    this.reg();
   }
+
+  reg() {
+    const nombre = this.registerForm.value.email;
+    const apellidos = this.registerForm.value.email;
+    const email = this.registerForm.value.email;
+    const password = this.registerForm.value.password;
+
+
+    const token = this.userService.register(nombre ,apellidos ,email, password).subscribe({
+      next: value => console.log(value),
+      error: err => alert(err)
+    });
+    console.log(token);
+  }
+
 }

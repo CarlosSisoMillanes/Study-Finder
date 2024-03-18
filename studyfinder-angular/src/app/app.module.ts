@@ -10,6 +10,13 @@ import { RegisterComponent } from './Paginas/register/register.component';
 import {ReactiveFormsModule} from "@angular/forms";
 import { PerfilComponent } from './Paginas/perfil/perfil.component';
 import {HttpClientModule} from "@angular/common/http";
+import {HeaderComponent} from './Componentes/header/header.component';
+import {HomeComponent} from "./Paginas/home/home.component";
+import { ForoComponent } from './Paginas/foro/foro.component';
+import { AsistenteComponent } from './Paginas/asistente/asistente.component';
+import { CuestionarioComponent } from './Paginas/cuestionario/cuestionario.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatCheckboxModule} from "@angular/material/checkbox";
 
 @NgModule({
   declarations: [
@@ -18,13 +25,20 @@ import {HttpClientModule} from "@angular/common/http";
     FooterComponent,
     LoginComponent,
     RegisterComponent,
-    PerfilComponent
+    PerfilComponent,
+    HeaderComponent,
+    HomeComponent,
+    ForoComponent,
+    AsistenteComponent,
+    CuestionarioComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    BrowserAnimationsModule,
+    MatCheckboxModule
   ],
   providers: [],
   bootstrap: [AppComponent]

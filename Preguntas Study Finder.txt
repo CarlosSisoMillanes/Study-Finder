@@ -1,0 +1,97 @@
+
+¿Qué nivel educativo has alcanzado hasta ahora?
+- Educación secundaria
+- Educación técnica o profesional
+- Educación universitaria
+
+¿Estás dispuesto/a a estudiar en línea o prefieres clases presenciales?
+- Prefiero clases presenciales
+- Prefiero estudiar en línea
+- No tengo preferencia
+
+¿Qué tipo de tareas te resultan más gratificantes?
+- Resolver problemas complejos.
+- Trabajar en proyectos creativos.
+- Comunicarte con personas y colaborar en equipo.
+
+¿Tienes una idea clara de lo que te gustaría hacer profesionalmente en el futuro?
+- Sí, tengo una idea clara
+- Tengo algunas ideas pero no estoy seguro/a
+- No lo tengo claro
+
+¿Prefieres estudiar a tiempo completo o parcial?
+- A tiempo completo
+- A tiempo parcial
+- No tengo preferencia
+
+¿Cuánto valoras la seguridad laboral y la estabilidad en tu carrera?
+- Mucho
+- Algo
+- No es importante
+
+¿Qué tan importante es para ti tener un impacto positivo en la sociedad mediante tu trabajo?
+- Muy importante
+- Algo importante
+- No es importante
+
+¿Prefieres trabajar en equipo o de manera independiente?
+- Trabajar en equipo
+- Trabajar de manera independiente
+- Me adapto a ambos
+
+¿Qué tipo de salario o estilo de vida esperas tener en tu carrera?
+- Alta remuneración económica
+- Equilibrio entre trabajo y vida personal
+- Realización personal y profesional
+
+¿Qué tipo de entorno de trabajo te resulta más cómodo?
+- Ambiente tranquilo
+- Ambiente dinámico y cambiable
+- Ambiente colaborativo
+
+¿Qué tipo de actividades disfrutas hacer en tu tiempo libre?
+- Deportes y actividad física
+  * ¿Tienes habilidades técnicas específicas relacionadas con el deporte?
+    - Sí
+    - No
+  * ¿Cuál de estas profesiones te parece mas atractiva?
+    - Entrenador personal
+    - Profesor de educación física
+    - Fisioterapeuta deportivo
+    - Nutricionista especializado en deportes
+    - Atleta profesional
+    - Instructor de yoga o pilates
+- Lectura y escritura
+  * ¿Cuál de estas profesiones te parece mas atractiva?
+    - Escritor/a (novelista, ensayista, poeta, etc.)
+    - Periodista
+    - Editor/a
+    - Corrector/a de textos
+    - Bibliotecario/a
+    - Profesor/a de literatura
+- Arte y creatividad
+  * ¿Tienes habilidades técnicas específicas relacionadas con el arte y la creatividad?
+    - Sí
+    - No
+  * ¿Cuál de estas profesiones te parece mas atractiva?
+    - Artista plástico (pintor, escultor, etc.)
+    - Diseñador/a gráfico/a
+    - Ilustrador/a
+    - Fotógrafo/a
+    - Director/a de arte
+    - Animador/a
+
+- Ciencia y tecnología
+  * ¿Tienes habilidades técnicas específicas relacionadas con la ciencia y la tecnología?
+    - Sí
+    - No
+  * ¿Te sentirías mas cómodo trabajando en proyectos científicos o tecnológicos?
+    - Científicos
+    - Tecnológicos
+  * ¿Cuál de estas profesiones te parece mas atractiva?
+    - Ingeniero/a de software
+    - Científico/a de datos
+    - Desarrollador/a web
+    - Investigador/a científico/a
+    - Analista de sistemas
+    - Especialista en ciberseguridad

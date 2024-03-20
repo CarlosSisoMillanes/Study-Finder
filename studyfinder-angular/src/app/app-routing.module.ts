@@ -4,6 +4,7 @@ import {LoginComponent} from "./Paginas/login/login.component";
 import {RegisterComponent} from "./Paginas/register/register.component";
 import {PerfilComponent} from "./Paginas/perfil/perfil.component";
 import {HomeComponent} from "./Paginas/home/home.component";
+import { CuestionarioComponent } from './Paginas/cuestionario/cuestionario.component';
 
 const routes: Routes = [
 
@@ -11,6 +12,7 @@ const routes: Routes = [
   { path: 'register', component: RegisterComponent },
   { path: 'perfil', component: PerfilComponent },
   { path: 'home', component: HomeComponent },
+  { path: 'cuestionario', component: CuestionarioComponent },
 
 
   { path: '',   redirectTo: '/login', pathMatch: 'full' },

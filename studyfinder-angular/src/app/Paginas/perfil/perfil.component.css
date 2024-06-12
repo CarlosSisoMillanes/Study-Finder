@@ -1,0 +1,276 @@
+.box {
+    box-shadow: 0px 3px 6px 0px rgba(18, 15, 40, 0.12);
+    background-color: #ffffff;
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+  }
+  
+  .div {
+    align-self: flex-end;
+    max-width: 933px;
+    width: 100%;
+  }
+  
+  .div-2 {
+    gap: 20px;
+    display: flex;
+  }
+  
+  .column {
+    display: flex;
+    flex-direction: column;
+    line-height: normal;
+    width: 63%;
+  }
+  
+  .div-4 {
+    gap: 20px;
+    display: flex;
+  }
+  
+  .column-2 {
+    display: flex;
+    flex-direction: column;
+    line-height: normal;
+    width: 37%;
+  }
+  
+  .div-5 {
+    color: #171a1f;
+    font: 400 36px/140% Lexend, sans-serif;
+  }
+  
+  .div-6 {
+    border-radius: 50%;
+    background-color: #9095a0;
+    display: flex;
+    width: 156px;
+    height: 156px;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .img {
+    aspect-ratio: 1;
+    object-fit: cover;
+    width: 100%;
+  }
+  
+  .column-4 {
+    display: flex;
+    flex-direction: column;
+    line-height: normal;
+    width: 63%;
+  }
+  
+  .div-7 {
+    display: flex;
+    margin-top: 30px;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  
+  .img-2,
+  .img-3 {
+    aspect-ratio: 4;
+    object-fit: cover;
+    width: 142px;
+  }
+  
+  .div-8 {
+    display: flex;
+    margin-top: 21px;
+    flex-direction: column;
+    font-size: 20px;
+    color: #171a1f;
+    line-height: 150%;
+  }
+  
+  .div-9 {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    font-weight: 400;
+    padding: 20px 16px 0 0;
+  }
+  
+  .div-10 {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    gap: 0px;
+  }
+  
+  .img-4 {
+    aspect-ratio: 1;
+    object-fit: cover;
+    width: 64px;
+  }
+  
+  .div-11 {
+    display: flex;
+    margin-top: 10px;
+    flex-direction: column;
+  }
+  
+  .div-12 {
+    font-family: Manrope, sans-serif;
+    align-self: start;
+    margin-left: 20px;
+  }
+  
+  .img-5 {
+    object-fit: cover;
+    width: 100%;
+    stroke-width: 1px;
+  }
+  
+  .div-13 {
+    align-self: start;
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  
+  .img-6 {
+    aspect-ratio: 1;
+    object-fit: cover;
+    width: 64px;
+  }
+  
+  .div-14 {
+    font-family: Manrope, sans-serif;
+    flex-grow: 1;
+  }
+  
+  .img-7 {
+    object-fit: cover;
+    width: 100%;
+    stroke-width: 1px;
+    align-self: center;
+    margin-top: 11px;
+  }
+  
+  .div-15 {
+    align-self: start;
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-between;
+    gap: 20px;
+    white-space: nowrap;
+  }
+  
+  .img-8 {
+    aspect-ratio: 1;
+    object-fit: cover;
+    width: 64px;
+  }
+  
+  .div-16 {
+    font-family: Manrope, sans-serif;
+    align-self: start;
+    margin-top: 13px;
+    flex-grow: 1;
+  }
+  
+  .img-9 {
+    object-fit: cover;
+    width: 100%;
+    stroke-width: 1px;
+    align-self: center;
+    margin-top: 11px;
+  }
+  
+  .div-17 {
+    align-self: start;
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-between;
+    gap: 20px;
+    white-space: nowrap;
+  }
+  
+  .img-10 {
+    aspect-ratio: 1;
+    object-fit: cover;
+    width: 64px;
+  }
+  
+  .div-18 {
+    font-family: Manrope, sans-serif;
+    align-self: start;
+    margin-top: 13px;
+    flex-grow: 1;
+  }
+  
+  .div-19 {
+    font-family: Manrope, sans-serif;
+    font-weight: 700;
+    align-self: start;
+    margin-top: 20px;
+  }
+  
+  .div-20 {
+    background-color: #ffffff;
+    justify-content: space-between;
+    gap: 20px;
+    display: flex;
+    flex-direction: row;
+    margin-top: 16px;
+    padding: 16px;
+  }
+  
+  .div-21 {
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    color: #171a1f;
+    font-weight: 400;
+    white-space: nowrap;
+  }
+  
+  .div-22 {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+  }
+  
+  .img-11 {
+    aspect-ratio: 1;
+    object-fit: cover;
+    width: 64px;
+  }
+  
+  .div-23 {
+    font-family: Manrope, sans-serif;
+    align-self: end;
+    margin-top: 35px;
+  }
+  
+  .div-24 {
+    display: flex;
+    margin-top: 12px;
+    justify-content: space-between;
+    gap: 12px;
+  }
+  
+  .img-12 {
+    aspect-ratio: 1;
+    object-fit: cover;
+    width: 64px;
+  }
+  
+  .div-25 {
+    font-family: Manrope, sans-serif;
+    flex-grow: 1;
+  }
+  
+  .div-26 {
+    align-self: start;
+    display: flex;
+    margin-top: 4px;
+    flex-direction: column;
+  }
+  

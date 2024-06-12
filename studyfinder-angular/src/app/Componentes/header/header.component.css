@@ -24,8 +24,10 @@
   font-size: 16px;
   font-weight: 400;
   text-decoration: none;
+ 
 }
 .titulo a{
+  font-size: x-large;
     margin-left: 10px;
   color: rgba(23, 26, 31, 1);
   font-size: 16px;

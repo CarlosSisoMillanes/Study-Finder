@@ -1,63 +1,30 @@
-.pagina {
-    width: 100%;
-    height: 676px;
-    display: flex;
-    overflow: hidden;
-    position: relative;
-    box-shadow: 0px 3px 6px 0px rgba(18, 15, 40, 0.11999999731779099) ;
-    align-items: flex-start;
-    flex-shrink: 0;
-}
-
 .contenedorNoticia {
-    top: 56px;
-    left: 0px;
-  width: 100%;
-    height: 620px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 30px;
     display: flex;
-    position: absolute;
-    align-items: flex-start;
-    flex-shrink: 0;
-    background-color: rgba(255, 255, 255, 1);
-}
-
-.imagenNoticia {
-    top: 54px;
-    left: 650px;
-    width: 700px;
-    height: 400px;
-    position: absolute;
-}
-
-.tituloNoticia {
-    top: 149px;
-    left: 132px;
-    color: rgba(23, 26, 31, 1);
-    width: 520px;
-    height: auto;
-    position: absolute;
-    font-size: 56px;
-    font-style: Bold;
-    text-align: left;
-    font-family: Lexend;
-    font-weight: 700;
-    line-height: 78px;
-    font-stretch: normal;
-    text-decoration: none;
-}
-.textoNoticia {
-    top: 305px;
-    left: 132px;
-    color: rgba(23, 26, 31, 1);
-    width: 520px;
-    height: auto;
-    position: absolute;
-    font-size: 20px;
-    font-style: Regular;
-    text-align: left;
-    font-family: Manrope;
-    font-weight: 400;
-    line-height: 30px;
-    font-stretch: normal;
-    text-decoration: none;
-}
+    margin-bottom: 10px; /* Espacio entre cada noticia */
+  }
+  
+  .imagenNoticia {
+    width: 300px; /* Ancho de la imagen */
+    height: auto; /* Altura automática para mantener la proporción */
+    margin-left: 20px; /* Espacio entre la imagen y el texto */
+    margin-right: 40px;
+  }
+  
+  .contenidoNoticia {
+    flex: 1; /* El contenido de la noticia ocupará todo el espacio disponible */
+  }
+  
+  .tituloNoticia {
+    font-size: 24px; /* Tamaño del título */
+    font-weight: bold; /* Negrita para el título */
+    margin-bottom: 10px; /* Espacio inferior entre el título y el texto */
+  }
+  
+  .textoNoticia {
+    font-size: 16px; /* Tamaño del texto */
+    line-height: 1.5; /* Altura de línea para mejorar la legibilidad */
+  }
+  

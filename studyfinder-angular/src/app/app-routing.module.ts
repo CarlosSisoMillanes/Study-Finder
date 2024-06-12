@@ -7,6 +7,7 @@ import {AsistenteComponent} from "./Paginas/asistente/asistente.component";
 import {ForoComponent} from "./Paginas/foro/foro.component";
 import {LoginComponent} from "./Paginas/login/login.component";
 import {RegisterComponent} from "./Paginas/register/register.component";
+import { PerfilComponent } from './Paginas/perfil/perfil.component';
 
 const routes: Routes = [
   { path: 'login', component: LoginComponent },
@@ -15,6 +16,7 @@ const routes: Routes = [
   { path: 'asistente', component: AsistenteComponent },
   { path: 'cuestionario', component: CuestionarioComponent },
   { path: 'foro', component: ForoComponent },
+  { path: 'perfil', component: PerfilComponent },
 
   { path: '', redirectTo: '/login', pathMatch: 'full' }
 ];

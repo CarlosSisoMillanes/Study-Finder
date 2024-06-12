@@ -1,202 +1,67 @@
-.pagina {
-    width: 100%;
-    height: 60px;
-    display: flex;
-    overflow: hidden;
-    position: relative;
-    box-shadow: 0px 3px 6px 0px rgba(18, 15, 40, 0.11999999731779099) ;
-    align-items: flex-start;
-    flex-shrink: 0;
+.encabezado {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 1);
+ 
+  box-shadow: 0px 3px 6px 0px rgba(18, 15, 40, 0.12);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000; /* Asegura que esté por encima de otros elementos */
 }
 
-.encabezado {
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    height: 56px;
-    display: flex;
-    overflow: hidden;
-    position: absolute;
-    align-items: flex-start;
-    flex-shrink: 0;
-    border-color: rgba(144, 149, 160, 1);
-    border-style: solid;
-    border-width: 2px;
-    background-color: rgba(255, 255, 255, 1);
+.inicio {
+  display: flex;
+  align-items: center;
+}
+
+.titulo {
+    margin-left: 10px;
+  color: rgba(23, 26, 31, 1);
+  font-size: 16px;
+  font-weight: 400;
+  text-decoration: none;
+}
+.titulo a{
+    margin-left: 10px;
+  color: rgba(23, 26, 31, 1);
+  font-size: 16px;
+  font-weight: 400;
+  text-decoration: none;
 }
 
 .menu {
-    top: -2px;
-    left: 110px;
-    width: 528px;
-    height: 52px;
-    display: flex;
-    position: absolute;
-    align-items: flex-start;
-    flex-shrink: 1;
-}
-
-.home {
-    top: 0px;
-    left: 0px;
-    width: 111px;
-    height: 52px;
-    display: flex;
-    position: absolute;
-    align-items: flex-start;
-    flex-shrink: 0;
-    background-color: rgba(0, 0, 0, 0);
-}
-
-.tituloHome {
-    top: 12px;
-    color: rgba(23, 26, 31, 1);
-    height: auto;
-    position: absolute;
-    font-size: 18px;
-    font-style: Regular;
-    text-align: left;
-    font-family: Manrope;
-    font-weight: 400;
-    line-height: 28px;
-    font-stretch: normal;
-    text-decoration: none;
+  display: flex;
+  justify-content: center;
 }
 
 .menu-item {
-    height: 36px;
-    display: flex;
-    position: absolute;
-    align-items: flex-start;
-    flex-shrink: 0;
-    background-color: rgba(255, 255, 255, 1);
+  margin-right: 20px;
 }
 
-
-.menu1 {
-    top: 16px;
-    left: 123px;
-    width: 111px;
-    height: 36px;
-    display: flex;
-    position: absolute;
-    align-items: flex-start;
-    flex-shrink: 0;
-    background-color: rgba(255, 255, 255, 1);
-}
-
-.titulo1 {
-    top: 7px;
-    left: 12px;
-    color: rgba(23, 26, 31, 1);
-    height: auto;
-    position: absolute;
-    font-size: 14px;
-    font-style: Regular;
-    text-align: left;
-    font-family: Manrope;
-    font-weight: 400;
-    line-height: 22px;
-    font-stretch: normal;
-    text-decoration: none;
-}
-
-.menu2 {
-    top: 16px;
-    left: 240px;
-    width: 111px;
-    height: 36px;
-    display: flex;
-    position: absolute;
-    align-items: flex-start;
-    flex-shrink: 0;
-    background-color: rgba(255, 255, 255, 1);
-}
-
-.titulo2 {
-    top: 7px;
-    left: 12px;
-    color: rgba(23, 26, 31, 1);
-    height: auto;
-    position: absolute;
-    font-size: 14px;
-    font-style: Regular;
-    text-align: left;
-    font-family: Manrope;
-    font-weight: 400;
-    line-height: 22px;
-    font-stretch: normal;
-    text-decoration: none;
-}
-
-.menu3 {
-    top: 16px;
-    left: 362px;
-    width: 166px;
-    height: 36px;
-    display: flex;
-    position: absolute;
-    align-items: flex-start;
-    flex-shrink: 0;
-    background-color: rgba(255, 255, 255, 1);
-}
-
-.titulo3 {
-    top: 7px;
-    left: 12px;
-    color: rgba(23, 26, 31, 1);
-    height: auto;
-    position: absolute;
-    font-size: 14px;
-    font-style: Regular;
-    text-align: left;
-    font-family: Manrope;
-    font-weight: 400;
-    line-height: 22px;
-    font-stretch: normal;
-    text-decoration: none;
-}
-
-.usuario {
-    top: 10px;
-    left: 1259px;
-    width: 139px;
-    height: 36px;
-    display: flex;
-    position: absolute;
-    align-items: flex-start;
-    flex-shrink: 1;
+.perfil {
+  display: flex;
+  align-items: center;
 }
 
 .avatar {
-    top: 9px;
-    left: 9px;
-    width: 18px;
-    height: 18px;
-    position: absolute;
+  width: 18px;
+  height: 18px;
+  margin-right: 8px;
 }
 
-.nombreUsuario {
-    top: 7px;
-    left: 42px;
-    color: rgba(23, 26, 31, 1);
-    width: 97px;
-    height: auto;
-    position: absolute;
-    font-size: 14px;
-    font-style: Regular;
-    text-align: left;
-    font-family: Manrope;
-    font-weight: 400;
-    line-height: 22px;
-    font-stretch: normal;
-    text-decoration: none;
+.nombre-usuario {
+  color: rgba(23, 26, 31, 1);
+  font-size: 14px;
+  font-weight: 400;
+  margin-right: 8px;
 }
 
-.iconoLogout {
-    top: 17px;
-    left: 1374px;
-    width: 24px;
-    height: 24px;
-    position: absolute;
+.icono-logout {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
 }

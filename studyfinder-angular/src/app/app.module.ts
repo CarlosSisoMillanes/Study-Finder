@@ -3,7 +3,6 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { PaginaComponent } from './Paginas/pagina/pagina.component';
 import { FooterComponent } from './Componentes/footer/footer.component';
 import { LoginComponent } from './Paginas/login/login.component';
 import { RegisterComponent } from './Paginas/register/register.component';
@@ -21,7 +20,6 @@ import {MatCheckboxModule} from "@angular/material/checkbox";
 @NgModule({
   declarations: [
     AppComponent,
-    PaginaComponent,
     FooterComponent,
     LoginComponent,
     RegisterComponent,

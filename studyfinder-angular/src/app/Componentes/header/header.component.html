@@ -1,24 +1,23 @@
-<div class="pagina">
-    <div class="encabezado">
-      <div class="menu">
-        <div class="home">
-          <span class="tituloHome"><span><a routerLink="/welcome"> Home</a></span></span>
-        </div>
-        <div class="menu1">
-          <span class="titulo1" ><a routerLink="/asistente"> Asistente pro</a> </span>
-        </div>
-        <div class="menu2">
-          <span class="titulo2"><a routerLink="/foro"> Test estudio</a> </span>
-        </div>
-        <div class="menu3">
-          <span class="titulo3"  ><a routerLink="/cuestionario"> ¿Que puedo estudiar?</a> </span>
-        </div>
-      </div>
-      <div class="usuario">
-        <img src="assets/Avatar%2019.png" alt="Avatar" class="avatar"/>
-        <span class="nombreUsuario"><span>Usuario1</span></span>
-      </div>
-      <a routerLink="/login"> <img src="assets/Logout%201.png" alt="Cerrar sesión" class="iconoLogout" />
-      </a>
+<div class="encabezado">
+  <div class="inicio">
+    <span class="titulo"><a routerLink="/welcome">StudyFinder</a></span>
+  </div>
+  <div class="menu">
+    <div class="menu-item">
+      <a routerLink="/asistente" class="titulo">Asistente pro</a>
     </div>
+    <div class="menu-item">
+      <a routerLink="/foro" class="titulo">Test estudio</a>
+    </div>
+    <div class="menu-item">
+      <a routerLink="/cuestionario" class="titulo">¿Qué puedo estudiar?</a>
+    </div>
+  </div>
+  <div class="perfil">
+    <img src="assets/Avatar%2019.png" alt="Avatar" class="avatar"/>
+    <span class="nombre-usuario">Usuario1</span>
+    <a routerLink="/login" class="logout">
+      <img src="assets/Logout%201.png" alt="Cerrar sesión" class="icono-logout" />
+    </a>
+  </div>
 </div>

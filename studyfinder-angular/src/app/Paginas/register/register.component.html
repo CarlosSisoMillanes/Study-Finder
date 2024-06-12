@@ -1,60 +1,48 @@
-<div class="container86-container">
-  <div class="container86-container86">
-    <span class="container86-text"><span>Registro</span></span>
-    <button class="container86-button9">
-      <span class="container86-text02"></span>
-      <img src="assets/g.png" alt="Google1383" class="container86-google">
-    </button>
-    <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
-      <div class="container86-textbox3">
-        <input placeholder="Introduce el apellido" class="container86-textfield" formControlName="apellidos">
-        <span class="container86-text05"><span>Apellidos</span></span>
-        <div *ngIf="registerForm.get('apellidos').invalid && (registerForm.get('apellidos').dirty || registerForm.get('apellidos').touched)" class="text-danger">
-          <div *ngIf="registerForm.get('apellidos').hasError('required')">Los apellidos son requeridos.</div>
-        </div>
-      </div>
-      <div class="container86-textbox4">
-        <input placeholder="Introduce el nombre" class="container86-textfield1" formControlName="nombre">
-        <span class="container86-text07"><span></span></span>
-        <span class="container86-text09"><span>Nombre</span></span>
-        <div *ngIf="registerForm.get('nombre').invalid && (registerForm.get('nombre').dirty || registerForm.get('nombre').touched)" class="text-danger">
-          <div *ngIf="registerForm.get('nombre').hasError('required')">El nombre es requerido.</div>
-        </div>
-      </div>
-      <div class="container86-textbox5">
-        <span class="container86-text11">
-          <span>Dirección de correo electrónico</span>
-        </span>
-        <input placeholder="ejemplol@gmail.com" class="container86-textfield2" formControlName="email">
-        <div *ngIf="registerForm.get('email').invalid && (registerForm.get('email').dirty || registerForm.get('email').touched)" class="text-danger">
-          <div *ngIf="registerForm.get('email').hasError('required')">El correo electrónico es requerido.</div>
-          <div *ngIf="registerForm.get('email').hasError('email')">El correo electrónico no es válido.</div>
-        </div>
-      </div>
-      <div class="container86-textbox6">
-        <span class="container86-text15"><span>Contraseña</span></span>
-        <input class="container86-textfield3" placeholder="Introduce la contraseña" formControlName="password">
-        <div *ngIf="registerForm.get('password').invalid && (registerForm.get('password').dirty || registerForm.get('password').touched)" class="text-danger">
-          <div *ngIf="registerForm.get('password').hasError('required')">La contraseña es requerida.</div>
-          <div *ngIf="registerForm.get('password').hasError('minlength')">La contraseña debe tener al menos 6 caracteres.</div>
-        </div>
-      </div>
-      <span class="container86-text19">
-        <span>He leído y acepto los términos y condiciones de uso</span>
-      </span>
-      <button type="submit" class="container86-button12" >
-        <span class="container86-text21"><span>Register</span></span>
-      </button>
-      <span class="container86-text23">
-        <span>¿Ya tienes una cuenta?  <a routerLink="/login">  Iniciar sesión</a> </span>
-      </span>
-      <div class="container86-checkbox6">
-        <div class="container86-frame">
-          <input type="checkbox">
-          <span class="container86-text25"></span>
-        </div>
-      </div>
-    </form>
+<div class="container">
+  <h1 class="main-title">STUDY FINDER</h1>
+
+  <button class="google-login-button">
+    <img src="assets/g.png" alt="Google Login" class="google-icon" />
+  </button>
+
+  <form class="form-container">
+    <div class="input-group">
+      <label class="input-label">Apellidos</label>
+      <input placeholder="Introduce el apellido" class="input-field" formControlName="apellidos">
+      
     </div>
+
+    <div class="input-group">
+      <label class="input-label">Nombre</label>
+      <input placeholder="Introduce el nombre" class="input-field" formControlName="nombre">
+     
+    </div>
+
+    <div class="input-group">
+      <label class="input-label">Dirección de correo electrónico</label>
+      <input placeholder="ejemplol@gmail.com" class="input-field" formControlName="email">
+     
+    </div>
+
+    <div class="input-group">
+      <label class="input-label">Contraseña</label>
+      <input placeholder="Introduce la contraseña" class="input-field" formControlName="password">
+     
+    </div>
+
+    <div class="terms">
+      <input type="checkbox" class="terms-checkbox">
+      <label class="terms-label">He leído y acepto los términos y condiciones de uso</label>
+    </div>
+
+    <button type="submit" class="submit-button">Register</button>
+
+    <span class="login-link">
+      ¿Ya tienes una cuenta? <a routerLink="/login">Iniciar sesión</a>
+    </span>
+  </form>
 </div>
+<br>
+<br>
+
 <app-footer></app-footer>
